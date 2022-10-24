@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;erros_excecoes_tratamento&apos; to &apos;estrutura_dados_java&apos;" description="Rename resource &apos;erros_excecoes_tratamento&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/erros_excecoes_tratamento" name="estrutura_dados_java" stamp="1666614438178" updateReferences="true"/>
+</session>
