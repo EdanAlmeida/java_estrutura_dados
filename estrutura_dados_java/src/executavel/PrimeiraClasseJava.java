@@ -1,4 +1,4 @@
-package executavel;
+/*/*package executavel;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -30,23 +30,23 @@ public class PrimeiraClasseJava {
 			throw new ExcecaoProcessarNota(e.getMessage());
 		}*/
 
-		String login = JOptionPane.showInputDialog("Informe o login: ");
-		String senha = JOptionPane.showInputDialog("Informe a senha: ");
+		/*String login = JOptionPane.showInputDialog("Informe o login: ");
+		/*String senha = JOptionPane.showInputDialog("Informe a senha: ");
 
 		if (new FuncaoAutenticacao(new Diretor(login, senha)).autenticar()) {
 			List<Aluno> alunos = new ArrayList<Aluno>();
-
+*/
 			/*
 			 * é uma lista que dentro dela temos uma chave que identifica uma sequêancia de
 			 * valores também
 			 */
-			HashMap<String, List<Aluno>> maps = new HashMap<String, List<Aluno>>();
+			/*HashMap<String, List<Aluno>> maps = new HashMap<String, List<Aluno>>();
 
-			for (int qtd = 1; qtd <= 1; qtd++) {
+			/*for (int qtd = 1; qtd <= 1; qtd++) {
 				/* new Aluno() é uma instância (Criação de objeto) */
 				/* aluno1 é uma referência para o objeto aluno */
 
-				String nome = JOptionPane.showInputDialog("Nome do aluno " + qtd + ": ");
+				/*String nome = JOptionPane.showInputDialog("Nome do aluno " + qtd + ": ");
 				String idade = JOptionPane.showInputDialog("Idade do aluno: ");
 
 				Aluno aluno1 = new Aluno();
@@ -123,13 +123,13 @@ public class PrimeiraClasseJava {
 		}
 
 		}catch (NumberFormatException e) { /*sempre imprimir o log no console*/
-			e.printStackTrace(); /*imprime o erro no console Java*/
+			/*e.printStackTrace(); /*imprime o erro no console Java*/
 			
 			/*Mensagem do erro ou causa*/
-			System.out.println("Mensagem: " + e.getMessage());
+			/*System.out.println("Mensagem: " + e.getMessage());
 			
 			/*Varrendo um array*/
-			for (int i = 0; i < e.getStackTrace().length; i++) {
+			/*for (int i = 0; i < e.getStackTrace().length; i++) {
 				System.out.println(e.getStackTrace()[i]);
 			}
 			
@@ -142,7 +142,7 @@ public class PrimeiraClasseJava {
 			e.printStackTrace();
 			JOptionPane.showMessageDialog(null, "Erro inesperado: " + e.getClass().getName());
 		}finally { /*Sempre é executado, ocorrendo erros ou não*/
-			JOptionPane.showMessageDialog(null, "Obrigado por ser tão tolinho");
+			/*JOptionPane.showMessageDialog(null, "Obrigado por ser tão tolinho");
 		}
 	}
-}
+}*/

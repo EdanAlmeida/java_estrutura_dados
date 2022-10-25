@@ -115,12 +115,12 @@ public class Aluno extends Pessoa {
 	public void setSerieMatriculado(String serieMatriculado) {
 		this.serieMatriculado = serieMatriculado;
 	}
-
+	
 	/* Método para retornar a média do aluno */
 	public double getMediaNota() {
 		double somaNotas = 0;
 		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.getNota();
+			somaNotas += disciplina.getMediaNotas();
 		}
 		return somaNotas / disciplinas.size();
 	}
