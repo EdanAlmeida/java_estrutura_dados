@@ -7,13 +7,13 @@
     <fullyQualifiedTypeName name="classes.Diretor"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="classes.Aluno"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="classes.Disciplina"/>
     <fullyQualifiedTypeName name="constantes.StatusAluno"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="excecao.ExcecaoProcessarNota"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="classes.Aluno"/>
+    <fullyQualifiedTypeName name="classes.Disciplina"/>
 </qualifiedTypeNameHistroy>

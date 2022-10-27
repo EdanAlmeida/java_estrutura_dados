@@ -30,7 +30,6 @@ public class ArrayVetor {
 			System.out.println("Notas da disciplina: " );
 			
 			double notaMax = 0.0;
-			double notaMin = 0.0;
 			for (int i = 0; i < disc.getNota().length; i++) {
 				System.out.println("Nota " + i + ": " + disc.getNota()[i]);
 				System.out.println("Média: " + disc.getMediaNotas());
@@ -43,17 +42,8 @@ public class ArrayVetor {
 						notaMax = disc.getNota()[i];
 					}
 				}
-				
-				if (i == 0) {
-					notaMin = disc.getNota()[i];
-				}else {
-					if (disc.getNota()[i] < notaMin) {
-						notaMin = disc.getNota()[i];
-					}
-				}
 			}
 			System.out.println("Maior nota " + disc.getDisciplina() + ": " + notaMax);
-			System.out.println("Menor nota " + disc.getDisciplina() + ": " + notaMin);
 		}
 		
 	}
