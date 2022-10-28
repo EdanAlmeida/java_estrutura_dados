@@ -8,7 +8,7 @@ public class ArrayVetor {
 	public static void main(String[] args) {
 		
 		Aluno aluno = new Aluno();
-		aluno.setNome("Edan Almeida");
+		aluno.setNome("Monster Mash");
 		aluno.setNomeEscola("Java Treinamento");
 		
 		Disciplina disciplina1 = new Disciplina();
@@ -21,10 +21,60 @@ public class ArrayVetor {
 		double[] notas2 = {70.0, 80.5, 90.0, 90.0};
 		disciplina2.setNota(notas2);
 		
+		Disciplina disciplina3 = new Disciplina();
+		disciplina3.setDisciplina("Python");
+		double[] notas3 = {75.0, 85.5, 95.0, 80.0};
+		disciplina3.setNota(notas3);
+		
 		aluno.getDisciplinas().add(disciplina1);
 		aluno.getDisciplinas().add(disciplina2);
+		aluno.getDisciplinas().add(disciplina3);
 		
-		System.out.println("Nome do aluno: " + aluno.getNome() + "| Inscrito no curso: " + aluno.getNomeEscola());
+		//------------------------------------------------------------------------
+		
+		Aluno[] arrayAlunos = new Aluno[1];
+		
+		arrayAlunos[0] = aluno;
+		
+		//percorre o array de alunos
+		for (int i = 0; i < arrayAlunos.length; i++) {
+			System.out.println("Nome do aluno: " + arrayAlunos[i].getNome());
+			
+			//percorre a lista de disciplinas
+			for (Disciplina disc : arrayAlunos[i].getDisciplinas()) {
+				System.out.println("Nome da disciplina: " + disc.getDisciplina());
+				
+				//percorre o array de notas 
+				for (int posNota = 0; posNota < disc.getNota().length; posNota++) {
+					System.out.println("Notas: " + disc.getNota()[posNota]);
+				}
+			}
+		}
+		
+	}
+}
+
+/*Array pode ser de todos os tipos de dados e objetos*/
+/*String n = JOptionPane.showInputDialog("Informe a ordem da matriz: ");
+		int x = Integer.valueOf(n);
+		double[][] notas = new double[x][x];
+		
+		for (int i = 0; i < notas.length; i++) {
+			for (int j = 0; j < notas.length; j++) {
+				String valor = JOptionPane.showInputDialog("Posição: " + i + ", " + j + ": ");
+				notas[i][j] = Double.valueOf(valor);
+			}
+		}
+		
+		for (int i = 0; i < notas.length; i++) {
+			for (int j = 0; j < notas.length; j++) {
+				System.out.println(notas[i][j] * 2);
+			}
+		}*/
+
+
+/*
+ * System.out.println("Nome do aluno: " + aluno.getNome() + "| Inscrito no curso: " + aluno.getNomeEscola());
 		for (Disciplina disc : aluno.getDisciplinas()) {
 			System.out.println("Disciplina: " + disc.getDisciplina());
 			System.out.println("Notas da disciplina: " );
@@ -55,25 +105,4 @@ public class ArrayVetor {
 			System.out.println("Maior nota " + disc.getDisciplina() + ": " + notaMax);
 			System.out.println("Menor nota " + disc.getDisciplina() + ": " + notaMin);
 		}
-		
-	}
-
-}
-
-/*Array pode ser de todos os tipos de dados e objetos*/
-/*String n = JOptionPane.showInputDialog("Informe a ordem da matriz: ");
-		int x = Integer.valueOf(n);
-		double[][] notas = new double[x][x];
-		
-		for (int i = 0; i < notas.length; i++) {
-			for (int j = 0; j < notas.length; j++) {
-				String valor = JOptionPane.showInputDialog("Posição: " + i + ", " + j + ": ");
-				notas[i][j] = Double.valueOf(valor);
-			}
-		}
-		
-		for (int i = 0; i < notas.length; i++) {
-			for (int j = 0; j < notas.length; j++) {
-				System.out.println(notas[i][j] * 2);
-			}
-		}*/
+ */
